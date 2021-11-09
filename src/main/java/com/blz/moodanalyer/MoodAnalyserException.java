@@ -2,14 +2,9 @@ package com.blz.moodanalyer;
 
 public class MoodAnalyserException extends Exception{
     public String message;
-    public ExceptionType exceptionType;
 
-    enum ExceptionType {
-        ENTERED_NULL,ENTERED_EMPTY;
-    }
-
-    public MoodAnalyserException(String message, ExceptionType type) {
+    public MoodAnalyserException(String message) {
         this.message = message;
-        this.exceptionType = type;
+
     }
 }
