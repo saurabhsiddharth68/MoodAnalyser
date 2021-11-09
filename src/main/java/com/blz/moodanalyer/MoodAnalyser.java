@@ -5,6 +5,9 @@ public class MoodAnalyser {
         if(message.toLowerCase().contains("sad")){
             return "SAD";
         }
+        else if(message.toLowerCase().contains("any")){
+            return "HAPPY";
+        }
         else{
             return null;
         }
